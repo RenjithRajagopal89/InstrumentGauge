@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ic.driverinformation.view.custom.Speedometer
+        android:id="@+id/speedometer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_dark"
+        app:fontName="caviar_dreams_regular.ttf"
+        app:labelSize="35"
+        app:maxSpeed="250"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
