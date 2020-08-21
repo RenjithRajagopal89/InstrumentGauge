@@ -37,6 +37,6 @@ Both projects are Android gradle based.Follow the steps to install both apks
  
  ## Known issues
  1.App is not fit for screen orientation support
- 2.Double fingure swipe is WIP.This commit doesn't contains those changes
+ 2.Double finger swipe is WIP state.This commit doesn't contains those changes
  
 
