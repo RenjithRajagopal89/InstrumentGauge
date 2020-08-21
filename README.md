@@ -16,6 +16,27 @@ InstrumentGauge
 DriverInformation is the application that displays user facing UI and VehicleService is AIDL service that provide interfaces for signal readings.
 VehicleService also includes Android library - VehicleServiceLib that contains AIDL IPC translations that can be used by VehicleService and DriverInformation application.
 
-# Block Diagram
+## Block Diagram
 ![Untitled Diagram](https://user-images.githubusercontent.com/20403980/90893600-8f42cd80-e3bf-11ea-9cd2-cd0fef243160.png)
+
+## Steps to build
+
+Both projects are Android gradle based.Follow the steps to install both apks
+
+1.Import both projects in Android Studio.
+2.Build both projects.
+3.If build is success ,then deploy the VehicleService package to target by executing following command.
+  Go to directory-> VehicleService
+  $ adb install -r ./app/build/outputs/apk/debug/app-debug.apk && adb reboot
+  
+ 4.Once target device is booted up,VehicleService will be up and running in background
+ 5.Deploy the DriverInformation app from Android Studio
+ 
+ ## Cluster demo - Screenrecord captured
+ [cluster.zip](https://github.com/RenjithRajagopal89/InstrumentGauge/files/5109028/cluster.zip)
+ 
+ ## Known issues
+ 1.App is not fit for screen orientation support
+ 2.Double fingure swipe is WIP.This commit doesn't contains those changes
+ 
 
