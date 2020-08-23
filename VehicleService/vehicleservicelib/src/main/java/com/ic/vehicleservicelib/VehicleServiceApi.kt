@@ -14,8 +14,8 @@ class VehicleServiceApi : ServiceConnection {
     private val LOG_TAG = "VehicleServiceApi"
     private val LOG_PREFIX = "[VehicleServiceApi]"
     private var context: Context? = null
-    private val PACKAGENAME = "com.ic.vehicleservice"
-    private val PACKAGENAME_SERVICENAME = "com.ic.vehicleservice.VehicleService"
+    private val VEHICLE_SERVICE_PACKAGE = "com.ic.vehicleservice"
+    private val VEHICLE_SERVICE_INTERFACE_NAME = "com.ic.vehicleservice.IVehicleService"
 
     private var vehicleServiceApi: IVehicleService? = null
     private var vehicleServiceApiConnectionCb: VehicleServiceApiConnectionCb? = null
@@ -32,9 +32,12 @@ class VehicleServiceApi : ServiceConnection {
     private fun connect() {
         Log.d(LOG_TAG,
             "Connect")
-        val intent = Intent()
+       // val intent = Intent()
        // intent.action = "AnalyticsCloudApi"
-        intent.component = ComponentName(PACKAGENAME, PACKAGENAME_SERVICENAME)
+        //intent.component = ComponentName(PACKAGENAME, PACKAGENAME_SERVICENAME)
+        val intent = Intent()
+        intent.setPackage(VEHICLE_SERVICE_PACKAGE)
+        intent.action = VEHICLE_SERVICE_INTERFACE_NAME
         context!!.bindService(intent, this, Context.BIND_AUTO_CREATE)
         Log.d(LOG_TAG, LOG_PREFIX.toString() + "Binding successful")
     }

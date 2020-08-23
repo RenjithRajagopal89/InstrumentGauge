@@ -2,18 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ic.vehicleservice">
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
     <application
         android:allowBackup="true"
         android:label="@string/app_name"
         android:supportsRtl="true">
 
         <service android:name=".VehicleService"
-            android:singleUser="true">
+            android:exported="true">
             <intent-filter>
-                <action android:name="com.ic.vehicleservice.VehicleService" />
+                <action android:name="com.ic.vehicleservice.IVehicleService" />
             </intent-filter>
-
         </service>
+
         <receiver android:name=".StartOnBoot"
             android:exported="true">
             <intent-filter>
