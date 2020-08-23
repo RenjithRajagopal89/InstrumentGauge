@@ -17,7 +17,8 @@ DriverInformation is the application that displays user facing UI and VehicleSer
 VehicleService also includes Android library - VehicleServiceLib that contains AIDL IPC translations that can be used by VehicleService and DriverInformation application.
 
 ## Block Diagram
-![Untitled Diagram](https://user-images.githubusercontent.com/20403980/90893600-8f42cd80-e3bf-11ea-9cd2-cd0fef243160.png)
+
+![cluster](https://user-images.githubusercontent.com/20403980/90974203-40b14280-e529-11ea-8a90-77391d442c0f.png)
 
 ## Steps to build
 
