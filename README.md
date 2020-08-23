@@ -1,7 +1,7 @@
 # InstrumentGauge
 
 Instrument guage application displays speedometer and odometer reading in car instrument panel.
-Application consists of two custom views,one for speedometer and other for odometer.Transfer between views are accomplished by double finger swip
+Application consists of two custom views,one for speedometer and other for odometer.Transfer between views are accomplished by double finger swip  
 Source code is organized in following structure  
 InstrumentGauge  
 ->DriverInformation  
