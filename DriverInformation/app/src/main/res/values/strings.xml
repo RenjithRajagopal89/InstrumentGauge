@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DriverInformation</string>
+    <string name="speedometer">SPEEDOMETER</string>
+    <string name="odometer">ODOMETER</string>
 </resources>
