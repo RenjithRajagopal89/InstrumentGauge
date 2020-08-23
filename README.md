@@ -34,10 +34,7 @@ Both projects are Android gradle based.Follow the steps to install both apks
  5.Deploy the DriverInformation app from Android Studio
  
  ## Cluster demo - Screenrecord captured
- [cluster.zip](https://github.com/RenjithRajagopal89/InstrumentGauge/files/5109028/cluster.zip)
- 
- ## Known issues
- 1.App is not fit for screen orientation support
- 2.Double finger swipe is WIP state.This commit doesn't contains those changes
+[cluster.zip](https://github.com/RenjithRajagopal89/InstrumentGauge/files/5113942/cluster.zip)
+
  
 
