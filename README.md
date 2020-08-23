@@ -2,10 +2,10 @@
 
 Instrument guage application displays speedometer and odometer reading in car instrument panel.
 Application consists of two custom views,one for speedometer and other for odometer.Transfer between views are accomplished by double finger swip
-Source code is organized in following structure
+Source code is organized in following structure  
 InstrumentGauge  
-1.DriverInformation  
-2.VehicleService
+->DriverInformation  
+->VehicleService
 
 DriverInformation is the application that displays user facing UI and VehicleService is AIDL service that provide interfaces for signal readings.
 VehicleService also includes Android library - VehicleServiceLib that contains AIDL IPC translations that can be used by VehicleService and DriverInformation application.
@@ -24,7 +24,7 @@ Both projects are Android gradle based.Follow the steps to install both apks
   In terminal go to directory-> VehicleService  
   $ adb install -r ./app/build/outputs/apk/debug/app-debug.apk && adb reboot
   
- 4.Once target device is booted up,VehicleService will be up and running in background which generates readings
+ 4.Once target device is booted up,VehicleService will be up and running in background which generates readings  
  5.Deploy the DriverInformation app from Android Studio which will display speedometer view
  
  ## Cluster demo - Screenrecord captured
